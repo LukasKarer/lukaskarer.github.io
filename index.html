@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KeebDealer - Coming Soon</title>
+    <link type="image/png" sizes="96x96" rel="icon" href="assets/images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="min-vh-100 d-flex flex-column">
+    <main class="my-auto">
+        <div class="container">
+            <h1 class="page-title">KeebDealer - Coming soon</h1>
+            <p class="page-description">You are interested in affordable custom keyboards for 100$ or less?<br>We would love to hear your opinion!
+            </p>
+            <p>
+                <input id="c1" type="checkbox" onclick="clickedCB()">
+                <label for="c1">I am interested!</label>
+                <div id="inputDiv" class="hidden">
+                    <label for="area" style="font-size: 28px">What you want to tell us:</label><br>
+                    <textarea id="area"></textarea>
+                    <br>
+                    <span style="color: green; font-size: 28px" id="thankYou" hidden>Thank you for sending!</span>
+                    <br>
+                    <br>
+                    <button onclick="clickedSend()">Send Feedback</button>
+                </div>
+            </p>
+        </div>
+    </main>
+</body>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</html>

@@ -2,7 +2,7 @@
 let _supabase = null;
 let _uuid = null;
 window.addEventListener("load", async () => {
-    _uuid = localStorage.getItem("uuid") ?? crypto.randomUUID();
+    _uuid = localStorage.getItem("uuid") ?? window.crypto.randomUUID();
     localStorage.setItem("uuid", _uuid);
     _supabase = supabase.createClient('https://jqhwdgervurzowivohjx.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpxaHdkZ2VydnVyem93aXZvaGp4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODkwODk5NTUsImV4cCI6MjAwNDY2NTk1NX0.uWsPRy85chqcL2FLLVjADDgGSigFL7AflDOmH8ygSok')
     await _supabase
